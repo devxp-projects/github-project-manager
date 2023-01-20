@@ -37,3 +37,5 @@ next-env.d.ts
 
 # Next.js
 .next
+
+project-manager/.next

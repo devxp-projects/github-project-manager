@@ -4,47 +4,24 @@
   "sourceRoot": "project-manager",
   "projectType": "application",
   "targets": {
-    "build": {
-      "executor": "@nrwl/next:build",
-      "outputs": [
-        "{options.outputPath}"
-      ],
-      "defaultConfiguration": "production",
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
       "options": {
-        "root": "project-manager",
-        "outputPath": "dist/project-manager"
+        "cypressConfig": "apps/project-manager-e2e/cypress.config.ts",
+        "devServerTarget": "project-manager:serve:development",
+        "testingType": "e2e",
+        "browser": "chrome",
+        "record": false
+        
       },
       "configurations": {
-        "development": {
-          "outputPath": "project-manager"
-        },
-        "production": {}
-      }
-    },
-    "serve": {
-      "executor": "@nrwl/next:server",
-      "defaultConfiguration": "development",
-      "options": {
-        "buildTarget": "project-manager:build",
-        "dev": true
-      },
-      "configurations": {
-        "development": {
-          "buildTarget": "project-manager:build:development",
-          "dev": true
-        },
         "production": {
-          "buildTarget": "project-manager:build:production",
-          "dev": false
+          "devServerTarget": "project-manager:serve:production",
+          "record": false
         }
       }
     },
-    "export": {
-      "executor": "@nrwl/next:export",
-      "options": {
-        "buildTarget": "project-manager:build:production"
-      }
-    },
+    
     "test": {
       "executor": "@nrwl/jest:jest",
       "outputs": [
