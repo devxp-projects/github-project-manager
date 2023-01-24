@@ -13,9 +13,22 @@ function CustomApp({ Component, pageProps }: AppProps) {
     components: {
       MuiButton: {
         styleOverrides: {
-          root: {
-            color: light ? '#3765DC' : '#000',
-          },
+          root: ({ ownerState }) => ({
+            ...(ownerState.color === 'primary' && {
+              backgroundColor: '#3765DC',
+              color: 'white',
+              '&:hover': {
+                backgroundColor: '#3656A7',
+              },
+              '&:disables': {
+                backgroundColor: '#D7D7D7',
+              },
+            }),
+            ...(ownerState.color === 'secondary' && {
+              backgroundColor: '#F5F5F5',
+              color: 'black',
+            }),
+          }),
         },
       },
     },
