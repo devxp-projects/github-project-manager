@@ -8,7 +8,7 @@
       "executor": "@nrwl/cypress:cypress",
       "options": {
         "cypressConfig": "project-manager-e2e/cypress.config.ts",
-        "devServerTarget": "project-manager:serve:development",
+        "devServerTarget": "project-manager:serve",
         "testingType": "e2e"
       },
       "configurations": {

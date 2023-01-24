@@ -1,5 +1,5 @@
-
-  import styles from './index.module.css';
+// eslint-disable-line
+import styles from './index.module.css';
 
 
 
@@ -272,10 +272,12 @@ export function Index() {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
+                    // eslint-disable-next-line max-len
                     d="M120 15V30C103.44 30 90 43.44 90 60C90 76.56 76.56 90 60 90C43.44 90 30 103.44 30 120H15C6.72 120 0 113.28 0 105V15C0 6.72 6.72 0 15 0H105C113.28 0 120 6.72 120 15Z"
                     fill="#0E2039"
                   />
                   <path
+                    // eslint-disable-next-line max-len
                     d="M120 30V105C120 113.28 113.28 120 105 120H30C30 103.44 43.44 90 60 90C76.56 90 90 76.56 90 60C90 43.44 103.44 30 120 30Z"
                     fill="white"
                   />

@@ -1,0 +1,27 @@
+version: 2.1
+orbs:
+  cypress: cypress-io/cypress@1
+executors:
+  with-chrome:
+    docker:
+      - image: 'cypress/browsers:node16.14.2-slim-chrome100-ff99-edge'
+
+workflows:
+  build:
+    jobs:
+      - cypress/run:
+          name: Project Manager e2e
+          filters:
+            branches:
+              only:
+                - main
+          yarn: true
+          install-command: yarn install
+          executor: with-chrome
+          browser: chrome
+          command: |
+            yarn lint
+            yarn test
+          record: false
+          timeout: 30m
+            

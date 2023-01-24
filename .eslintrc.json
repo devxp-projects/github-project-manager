@@ -1,0 +1,35 @@
+{
+  "root": true,
+  "ignorePatterns": [
+    "!**/*",
+    "**/node_modules/**"
+  ],
+  
+  "overrides": [
+    {
+      "files": [
+        "*.ts",
+        "*.tsx",
+        "*.js",
+        "*.jsx"
+      ],
+      "rules": {
+        "prefer-const": "error",
+        "quotes": ["error", "single"],
+        "camelcase": 1,
+        "max-len": [
+          "error",
+          {
+            "code": 80,
+            "ignoreTrailingComments": true,
+            "ignoreRegExpLiterals": true,
+            "ignoreUrls": true,
+            "tabWidth": 2,
+            "ignorePattern": ".*[as|import]"
+          }
+        ]
+
+      }
+    }
+  ]
+}
