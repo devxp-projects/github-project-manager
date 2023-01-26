@@ -2,8 +2,8 @@
 import { Paper, Switch, ThemeProvider } from '@mui/material';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
+import useCustomTheme from '../utils/theme';
 import './styles.css';
-import useCustomTheme from './utils/theme';
 
 function CustomApp({ Component, pageProps }: AppProps) {
   const [theme, themeToggle] = useCustomTheme();
