@@ -1,6 +1,6 @@
 // eslint-disable-line
 import styles from './index.module.css';
-
+import Trial from './Trial'
 
 
 
@@ -13,14 +13,11 @@ export function Index() {
   return (
     <div className={styles.page}>
       
-      
+     
     <div className="wrapper">
       <div className="container">
         <div id="welcome">
-          <h1>
-            <span> Hello there, </span>
-            Welcome project-manager 👋
-          </h1>
+        <Trial/>
         </div>
 
         <div id="hero" className="rounded">
