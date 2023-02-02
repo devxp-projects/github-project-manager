@@ -6,11 +6,11 @@
     "node": ">= 16.14.2"
   },
   "scripts": {
-    "dev": "nx serve project-manager",
-    "build": "nx build project-manager",
-    "start": "nx serve project-manager --prod",
-    "lint": "nx lint project-manager",
-    "test": "nx e2e project-manager-e2e --production"
+    "dev": "nx serve movie-app",
+    "build": "nx build movie-app",
+    "start": "nx serve movie-app --prod",
+    "lint": "nx lint movie-app",
+    "test": "nx e2e movie-app-e2e --production"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
