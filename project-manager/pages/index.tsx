@@ -1,6 +1,6 @@
 // eslint-disable-line
 import styles from './index.module.css';
-import Trial from './Trial'
+
 
 
 
@@ -17,7 +17,7 @@ export function Index() {
     <div className="wrapper">
       <div className="container">
         <div id="welcome">
-        <Trial/>
+        
         </div>
 
         <div id="hero" className="rounded">
