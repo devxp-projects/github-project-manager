@@ -1,11 +1,11 @@
 import { render } from '@testing-library/react';
 
-import Components from './components';
+import Libs from './libs';
 
-describe('Components', () => {
+describe('Libs', () => {
   
   it('should render successfully', () => {
-    const { baseElement } = render(<Components />);
+    const { baseElement } = render(<Libs />);
     expect(baseElement).toBeTruthy();
   });
   
