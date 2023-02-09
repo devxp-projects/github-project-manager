@@ -1,20 +1,12 @@
  import styles from './index.module.scss';
-import Trial from './Trial'
 import React, {useState, useEffect} from 'react';
-import BeatLoader from "react-spinners/BeatLoader";
-import SplashScreen from './splashscreen';
+import SplashScreen from '../../libs/src/components/splashscreen';
 
 export function Index() {
-  /*
-   * Replace the elements below with your own.
-   *
-   * Note: The corresponding styles are in the ./index.scss file.
-   */
   const [loading, setLoading]= useState(false);
 
   useEffect(() =>{
 setLoading(true);
-
 
   }, [])
   return (
@@ -26,7 +18,7 @@ setLoading(true);
        {
         loading ?
         <SplashScreen
-        
+      
         />
         
         :
@@ -35,7 +27,7 @@ setLoading(true);
        }
 
       
-    
+
   <footer className={styles.footer}>
 Copyright &copy; Victor Abuka
   </footer>
