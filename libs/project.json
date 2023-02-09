@@ -1,7 +1,7 @@
 {
-  "name": "components",
+  "name": "libs",
   "$schema": "../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "components/src",
+  "sourceRoot": "libs/src",
   "projectType": "library",
   "tags": [],
   "targets": {
@@ -12,7 +12,7 @@
       ],
       "options": {
         "lintFilePatterns": [
-          "components/**/*.{ts,tsx,js,jsx}"
+          "libs/**/*.{ts,tsx,js,jsx}"
         ]
       }
     },
@@ -22,7 +22,7 @@
         "{workspaceRoot}/coverage/{projectRoot}"
       ],
       "options": {
-        "jestConfig": "components/jest.config.ts",
+        "jestConfig": "libs/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {

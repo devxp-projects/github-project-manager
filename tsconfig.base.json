@@ -14,6 +14,12 @@
     "paths": {
       "components": [
         "components/src/index.ts"
+      ],
+      "libs": [
+        "libs/libs/src/index.ts"
+      ],
+      "test": [
+        "libs/test/src/index.ts"
       ]
     }
   },
